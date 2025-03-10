@@ -1,10 +1,10 @@
-import BillingForm from "@/components/BillingForm"
-import { getUserSubscriptionPlan } from "@/lib/stripe"
+import BillingForm from '@/components/BillingForm';
+import { getUserSubscriptionPlan } from '@/lib/strip';
 
-const Page = async () => {
-    const subscriptionPlan = await getUserSubscriptionPlan()
+const Billing = async () => {
+	const subscriptionPlan = await getUserSubscriptionPlan();
 
-    return <BillingForm subscriptionPlan={subscriptionPlan} /> 
-}
+	return <BillingForm subscriptionPlan={subscriptionPlan} />;
+};
 
-export default Page
+export default Billing;

@@ -1,5 +1,6 @@
-import OpenAI from 'openai'
+import OpenAI from 'openai';
 
 export const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-})
+	apiKey: "lm-studio",
+	baseURL: process.env.LM_STUDIO_SERVER,
+});
